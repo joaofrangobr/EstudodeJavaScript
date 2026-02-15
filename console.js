@@ -1,0 +1,1 @@
+console.log("Hello World!") //serve para mandar mensagem diretamente para o console, ou ele busca um constante ou até mesmo let
