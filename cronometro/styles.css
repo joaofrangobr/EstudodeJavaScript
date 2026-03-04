@@ -12,6 +12,15 @@ body {
     border-radius: 5px;
     border-top: 30px solid black;
 }
+.titulo {
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
 button {
     height: 2.5em;
     border: none;
