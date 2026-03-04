@@ -1,16 +1,29 @@
 const watchDocument = document.querySelector("#watch");
+const pauseBtn = document.querySelector(".pause-btn");
 let seconds = 0;
 let minutes = 0;
 let hours = 0;
 let interval;
+let hide = null;
 
 function init() {
     watch();
     interval = setInterval(watch, 1000);
 }
 
+function resume() {
+    init();
+}
+
 const pause = () => {
     clearInterval(interval);
+    if (hide === null) {
+        pauseBtn.innerHTML = "Continuar";
+        hide = true;
+    } else {        pauseBtn.innerHTML = "Pausar";
+        hide = null;
+        init();
+    }
 }
 
 const clearAll = () => {
