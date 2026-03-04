@@ -1,0 +1,32 @@
+body {
+    background-color: grey;
+    color: white;
+    
+}
+.container {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 350px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 5px;
+    border-top: 30px solid black;
+}
+button {
+    height: 2.5em;
+    border: none;
+    color:darkslategray;
+    cursor: pointer;
+}
+.init-btn {
+    background-color: lightgreen;
+    color: black;
+}
+.pause-btn {
+    background-color: lightblue;
+    color: black;
+}
+.stop-btn {
+    background-color: lightcoral;
+    color: black;
+}
